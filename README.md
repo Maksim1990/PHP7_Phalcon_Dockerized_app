@@ -1,7 +1,7 @@
 # PHP7_Phalcon_Dockerized_app
 Dockerized PHP Phalcon framework development environment
 
-#### Inside **phalcon_php** container Phalcon Devtools are already available
+#### Inside **phalcon_php** container [Phalcon Devtools](https://github.com/phalcon/phalcon-devtools) are already available
 # How to run
 
 ```
