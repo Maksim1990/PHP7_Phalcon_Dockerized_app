@@ -1,0 +1,26 @@
+version: '3.5'
+
+services:
+  nginx:
+    image: nginx:latest
+    restart: always
+    ports:
+      - "8007:80"
+      - "4438:443"
+    volumes:
+      - ./docker/nginx/hosts:/etc/nginx/conf.d
+      - ./:/var/www
+    depends_on:
+      - phalcon
+  phalcon:
+    build:
+      context: ./
+      dockerfile: ./docker/phalcon/Dockerfile
+    container_name: phalcon_php
+    user: "${UID}"
+    volumes:
+      - ./:/var/www
+    ports:
+      #- "8007:80"
+      - 22:22
+      - 3306:3306
