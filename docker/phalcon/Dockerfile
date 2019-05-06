@@ -1,7 +1,7 @@
 FROM php:7.2.4-fpm
 MAINTAINER narushevich.maksim@gmail.com
 
-ARG PHALCON_VERSION=3.1.2
+ARG PHALCON_VERSION=3.4.1
 
 ENV PHALCON_VERSION=${PHALCON_VERSION}
 
@@ -46,5 +46,7 @@ RUN set -xe \
 
 # Set working directory Phalcon
 WORKDIR /var/www
+
+RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
 #CMD ["php", "-S", "0.0.0.0:80", "-t", "projects/"]

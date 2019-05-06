@@ -8,6 +8,8 @@ use Phalcon\Mvc\Model\Metadata\Memory as MetaDataAdapter;
 use Phalcon\Session\Adapter\Files as SessionAdapter;
 use Phalcon\Flash\Direct as Flash;
 
+require __DIR__.'/../../vendor/autoload.php';
+
 /**
  * Shared configuration service
  */
