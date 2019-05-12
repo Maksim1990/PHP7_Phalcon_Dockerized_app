@@ -20,7 +20,7 @@ class RobotsController extends \Phalcon\Mvc\Controller
 <div>Section 1 text6
 <p>
 <img src="https://maps.googleapis.com/maps/api/staticmap?center=Egypt&zoom=5&size=500x500&maptype=roadmap
-&key=AIzaSyCQDH8QkoX_6ImqSOYV3Au20T44yQLKUds" width="600px" />
+&key=" width="600px" />
 </p>
 </dv>';
         $html2 ='<div>

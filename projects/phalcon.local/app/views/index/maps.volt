@@ -59,7 +59,7 @@
 
 
 </script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDpqBT5-yERx15Rlph7U93GLFdgvA-pdmQ&callback=initMap&size=500x500"
+<script src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap&size=500x500"
         async defer></script>
 </body>
 </html>
