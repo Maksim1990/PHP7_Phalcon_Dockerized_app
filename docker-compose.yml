@@ -17,6 +17,7 @@ services:
       context: ./
       dockerfile: ./docker/phalcon/Dockerfile
     container_name: phalcon_php
+
     user: "${UID}"
     volumes:
       - ./:/var/www
@@ -34,5 +35,3 @@ services:
     ports:
       - "3306:3306"
     tty: true
-    volumes:
-      - ./data/mysql:/var/lib/mysql
